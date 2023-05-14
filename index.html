@@ -3,48 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo-let.png">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Encriptador_Desincriptador</title>
-    
+    <title>👽🤖 Encriptador 🤖👽</title>
 </head>
 <body>
     <header>
-        <script src="javascript/index.js"></script>
+        <img class = "logo" src="images/logo.svg" alt="Logo de Alura" class="logo">
     </header>
     <main>
-        <section class="principla">
-            <div class="encriptador">
-                <textarea 
-                name="texto" 
-                class= "texto" 
-                id="texto" 
-                cols="30" 
-                rows="10" 
-                placeholder="Ingrese su texto aquí"
-                ></textarea>
-            </div>
-            <div class = "condicion">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </div>
-            <div class="botones">
-                <button class = "button_encriptar" type ="button" onclick="encriptar()">Encriptar</button>
-                <button class = "button_desencriptar" type ="button" onclick="desencriptar()">Desencriptar</button>
-            </div>
-        
-        <section class="encriptado">
-            <img src = "" alt = "" id="imagen">
-            <div class="mensaje_encriptado" id="mensaje_encriptado">
-                <h2 id = "titulo_mensaje">Ningún mensaje encontrado</h2>
-                <p id = ingrsartexEnDes>Ingresa el texto que desees encriptar o Desencriptar</p>
-                <textarea class = "mensaje" name="mensaaje" id="mensaje" cols="30" rows="10"></textarea>
+        <section>
+            <textarea class = "text_area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion"><img src="images/vector-texto.svg" alt="" class="logo2">Solo letras minusculas y sin acentos</h6>
+                <div class="botones">
+                    <button class="btn-encriptar">Encriptar</button>
+                    <button class="btn-desencriptar">Desencriptar</button>
+                </div>
             </div>
         </section>
-    </section>
+
+        <section>
+            <textarea class="mensaje" cols="30" rows="10"></textarea>
+            <div>
+                <button class="copiar">Copiar</button>
+            </div>
+        </section>
     </main>
     <footer>
-    </footer>   
+
+    </footer>
 </body>
 </html>
