@@ -49,9 +49,10 @@ main {
         font-family: "Inter";
 }
 
-.texto_area::placeholder{
-    color: #0A3071;
-}
+::placeholder{color: #0A3071;}
+    .texto_area:focus {
+        outline: none
+    }
 
 .logo_alerta {
     position: absolute;
