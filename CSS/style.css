@@ -1,94 +1,162 @@
-*{
-    background: #F3F5FC; /* Selecciona todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
 }
 
-.logo{
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 31.9px;
+body {
+    background-color: #F4F4FC;
+}
+
+header {
+    width: 50px;
+    height: 70px;
+}
+
+.logo {
+    width: 100%;
+    height: 48px;
+    padding-top: 40px;
+    padding-left: 84px;
 }
 
 main {
+    position: absolute;
+    width: 100%;
+    height: 90%;
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    justify-content: space-between;
 }
 
-.text_area {
-    border: none;
+.caja_texto {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    padding-left: 100px;
+    width: 1080px;
+    height: 600px;
+}
+
+.texto_area {
+        border: none;
+        width: 80%;
+        height: 100%;
+        background-color: #F4F4FC;
+        cursor: pointer;
+        color: #0A3071;
+        font-size: 32px;
+        font-weight: 400;
+        font-family: "Inter";
+}
+
+.texto_area::placeholder{
     color: #0A3071;
-    margin-top: 90px;
-    text-transform: lowercase;
 }
 
-::placeholder { color:#0A3071}
-    .text_area:focus {
-        outline: none;
-    }
-
-.mensaje {
-    background: white;
-    background-image: url("/images/Muñeco.svg");
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 24px;
-    color: #0A3071;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
-}
-
-.mensaje:focus {
-    outline: none;
+.logo_alerta {
+    position: absolute;
+    top: 750px;
+    left: 370px;
+    display: flex;
+    color: #495057;
 }
 
 .botones {
-    display: flex;
-    margin-top: 18px;
-}
-
-.btn-desencriptar {
-    background: #D8DFE8;
-    border: 1px solid #0A3071;
-    border-radius: 24px;
-    color: #0A3071;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
+    position: absolute;
+    top: 800px;
+    height: 80px;
+    padding-left: 15%;
+    padding-top: 15px;
 }
 
 .btn-encriptar {
-    background-color: #0A3071;
-    border: 1px solid #0A3071;
-    border-radius: 24px;
-    color: white;
-    cursor: pointer;
-    height: 67px;
     width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3071;
+    color: white;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: "Inter";
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-desencriptar {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3071;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: "Inter";
+    border: 1px solid #0A3071;
+    cursor: pointer; 
+}
+
+.mensaje {
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 940px;
+    right: 400px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5);
+}
+
+.munieco {
+    position: absolute;
+    left: 30px;
+    top: 180px;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.parrafos {
+    position: absolute;
+    box-sizing: border-box;
+    top: 570px;
+    left: 40px;   
+}
+
+.parrafos h3{
+    font-size: 24px;
+    font-weight: 700px;
+    font-family: "Inter";
+    text-align: center;
+    color: #343A40;
+}
+
+.resultado p {
+    color: #495057;
+    font-size: 25px;
+}
+
+.btn-copiar {
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    background-color: aqua;
+    padding-left: 40px;
 }
 
 .copiar {
-    border: 1px solid #0A3071;
-    border-radius: 24px;
-    color: #0A3071;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
-    position: absolute;
     width: 328px;
-
-}
-
-
-.informacion {
-    color:#495057;
-    font-size: 18px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    color: #0A3071;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: "Inter";
+    border: 1px solid #0A3071;
+    cursor: pointer;
+    top: 100px;
+    right: 4px;
 }

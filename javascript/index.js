@@ -10,46 +10,51 @@ const mensaje =document.querySelector(".mensaje");
 //La letra "u" es convertida para "ufat"
 
 function btnEncriptar(){
-    const textoEncriptado = encriptar(textArea.value)
-    mensaje.value = textoEncriptado
+    const textoEncriptado = encriptar(textArea.value);
+    mensaje.value = textoEncriptado;
     textArea.value = "";
     mensaje.style.backgroundImage = "none";
 }
 
 function btnDesencriptar(){
-    const textoEncriptado = desencriptar(textArea.value)
-    mensaje.value = textoEncriptado
+    const textoEncriptado = desencriptar(textArea.value);
+    mensaje.value = textoEncriptado;
     textArea.value = "";
     
 }
 
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e", "enter"],["i", "imes"],["a","ai"],["o", "ober"],["u","ufat"]];
-    stringEncriptada = stringEncriptada.toLowerCase()
+    stringEncriptada = stringEncriptada.toLowerCase();
 
     for (let i = 0; i < matrizCodigo.length; i++){
         if (stringEncriptada.includes(matrizCodigo[i][0])){
-            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
+            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
 
         }
         
     }
-    return stringEncriptada
+    return stringEncriptada;
 
 }
 
 function desencriptar(stringDesencriptado){
     let matrizCodigo = [["e", "enter"],["i", "imes"],["a","ai"],["o", "ober"],["u","ufat"]];
-    stringDesencriptado = stringDesencriptado.toLowerCase()
+    stringDesencriptado = stringDesencriptado.toLowerCase();
 
     for (let i = 0; i < matrizCodigo.length; i++){
         if (stringDesencriptado.includes(matrizCodigo[i][1])){
-            stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
+            stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
 
         }
         
     }
-    return stringDesencriptado
-
+    return stringDesencriptado;
 }
+
+function btnCopiar(){
+    const textoCopiado = mensaje.value;
+    navigator.clipboard.writeText(textoCopiado);
+}
+
 
