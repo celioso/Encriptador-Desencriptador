@@ -56,5 +56,3 @@ function btnCopiar(){
     const textoCopiado = mensaje.value;
     navigator.clipboard.writeText(textoCopiado);
 }
-
-
