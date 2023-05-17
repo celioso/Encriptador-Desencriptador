@@ -159,8 +159,8 @@ main {
     
 }
 
-.btn-copiar1 {
-    display: flex;
+#btn-copiar1 {
+    display: none;
     position: absolute;
     bottom: 400px;
     top: 700px;
@@ -186,3 +186,4 @@ main {
 .ocultar{
     display: none;
 }
+

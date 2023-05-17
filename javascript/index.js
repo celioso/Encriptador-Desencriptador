@@ -4,17 +4,21 @@ var munieco = document.querySelector(".munieco");
 var parrafos = document.querySelector(".parrafos");
 var resultado = document.querySelector(".texto_resultado");
 
+
+
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
 
 function encriptar(){
     ocultarAdelante();
+    mostraBtnCopia()
     var cajatexto = recuperarTexto();
     resultado.textContent = encriptarTexto(cajatexto);
 }
 
 function desencriptar(){
     ocultarAdelante();
+    mostraBtnCopia()
     var cajatexto = recuperarTexto();
     resultado.textContent = desencriptarTexto(cajatexto);
 }
@@ -26,7 +30,13 @@ function recuperarTexto(){
 
 function ocultarAdelante(){
     munieco.classList.add("ocultar");
-    parrafos.classList.add("ocultar");
+    parrafos.classList.add("ocultar");   
+}
+
+function mostraBtnCopia(){
+    
+    document.getElementById('btn-copiar1').style.display = "block";
+    /*document.getElementById(copiar).style.display = "inherit";*/
 }
 
 function encriptarTexto(mensaje){
