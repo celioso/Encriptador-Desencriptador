@@ -1,7 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
 }
 
 body {
@@ -14,39 +16,36 @@ header {
 }
 
 .logo {
-    width: 100%;
-    height: 50px;
-    padding-top: 20px;
-    padding-left: 40px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
 }
 
 main {
-    position: absolute;
-    width: 100%;
-    height: 90%;
+    position: relative;
+    width: 1440px;
+    height: 1024;
     display: flex;
     justify-content: space-between;
 }
 
 .caja_texto {
     position: absolute;
-    left: 200px;
-    top: 100px;
+    left: 240px;
+    top: 168px;
     padding-left: 100px;
-    width: 1080px;
-    height: 600px;
+    width: 577px;
+    height: 550px;
 }
 
 .texto_area {
         border: none;
-        width: 80%;
+        width: 100%;
         height: 100%;
         background-color: #F4F4FC;
         cursor: pointer;
         color: #0A3071;
-        font-size: 32px;
-        font-weight: 400px;
-        font-family: "Inter";
+        text-transform: lowercase;
 }
 
 ::placeholder{color: #0A3071;}
@@ -64,8 +63,8 @@ main {
 
 .botones {
     position: absolute;
-    top: 800px;
-    height: 80px;
+    top: 885px;
+    left: 240;
     padding-left: 15%;
     padding-top: 15px;
 }
@@ -73,12 +72,10 @@ main {
 .btn-encriptar {
     width: 328px;
     height: 67px;
+    right: 240px;
     border-radius: 24px;
     background-color: #0A3071;
     color: white;
-    font-size: 16px;
-    font-weight: 400px;
-    font-family: "Inter";
     border: none;
     margin-right: 20px;
     cursor: pointer;
@@ -90,9 +87,6 @@ main {
     border-radius: 24px;
     background-color: #D8DFE8;
     color: #0A3071;
-    font-size: 16px;
-    font-weight: 400px;
-    font-family: "Inter";
     border: 1px solid #0A3071;
     cursor: pointer; 
 }
@@ -103,6 +97,7 @@ main {
     width: 400px;
     height: 940px;
     right: 40px;
+    top:40px;
     padding-right: 20px;
     background-color: #FFFFFF;
     box-sizing: border-box;
@@ -122,32 +117,45 @@ main {
     position: absolute;
     box-sizing: border-box;
     top: 570px;
-    left: 40px;
+    right:40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
 }
 
 .parrafos h3{
-    font-size: 32px;
+    width: 336px;
+    height: 58px;
+    line-height: 120%;
+    font-size: 24px;
     font-weight: 700px;
-    font-family: "Inter";
     text-align: center;
     color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .parrafos p {
-    font-family: "Inter";
-    font-weight: 400px;
+    width: 336px;
+    height: 48px;
     font-size: 16px;
     text-align: center;
     color: #495057;
-    padding: 20px;
+    line-height: 150%;
+    text-align: center;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .resultado{
     position: absolute;
     bottom: 410px;
-    width: 320;
-    height: 450;
     padding: 0;
+    margin: 32px 32px 32px 32px;
     box-sizing: border-box;
     margin-left: 25px;
 }
@@ -156,6 +164,7 @@ main {
     color: #495057;
     font-size: 25px;
     height: 400px;
+    width: 350px;
     
 }
 
@@ -187,3 +196,21 @@ main {
     display: none;
 }
 
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center ;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
