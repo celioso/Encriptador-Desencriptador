@@ -30,6 +30,12 @@ main {
     justify-content: space-between;
 }
 
+.section_texto{
+    width: 1000px;
+    height: 1024px;
+
+}
+
 .caja_texto {
     position: absolute;
     left: 240px;
@@ -93,6 +99,11 @@ main {
     color: #0A3071;
     border: 1px solid #0A3071;
     cursor: pointer; 
+}
+
+.section_mensaje {
+    width: 440px;
+    height: 1024px;
 }
 
 .mensaje {
