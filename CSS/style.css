@@ -4,11 +4,12 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    margin: 0%;
 }
 
 body {
     background-color: #F4F4FC;
-    width: 1440px; /* ver el error desde aqui*/
+    width: 1440px; 
     height: 1024px;
 }
 
@@ -200,6 +201,156 @@ main {
     display: none;
 }
 
-@media screen and (max-width:480px){
+@media (max-width:768px){
 
+    body {
+        background-color: #F4F4FC;
+        width: 768px; 
+        height: 1174px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        position: absolute;
+        Width:31.09px;
+        Height: 46.37px;
+        left: 5.21%;
+        top: 6.25%;
+    }
+
+    .caja_texto {
+        width: 89.58%; 
+        top: 240px; 
+        left: 5.2%;
+    }
+
+    .texto_area {
+        width: 100%;
+        left: 10%;
+        top: 5.2%;
+    }
+
+    .logo_alerta {
+        width: 80%;
+        left:8.25%;
+        font-size: 37.5%;
+        /*top:67%;*/
+    }
+
+    .logo_alerta p {
+        font-size: 16px;
+    }
+
+    .botones {
+        align-items: flex-start;
+        width: 84%;
+        height: 5.7%;
+        left: 5.2%;
+        flex-direction: row;
+    }
+
+    .btn-encriptar .btn-desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .btn-encriptar:hover, .btn-desencriptar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;    
+    }
+
+    .mensaje {
+        position: relative;
+        width: 80%;
+        height: 15%;
+        left: 20%;
+        top: 1000px;
+    }
+
+    .parrafos {
+        width: 100%;
+        top: 5%;
+        left: -37%;
+        height: 133px;
+    }
+
+    .munieco {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .parrafos h3{
+        width: 624px;
+        height: 40px;
+        top: 23px;
+        font-size: 24px;
+
+    }
+
+    .parrafos p{
+        width: 624px;
+        height: 50px;
+        font-size: 16px;
+        
+    }
+
+    .parrafos br{
+        display: none;
+    }
+
+    .resultado{
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 688px;
+        height: 343px;
+        top: -40px;
+        padding: 0;
+        left: -50%;
+        margin: 40px 40px 40px 40px;
+        box-sizing: border-box;
+        padding: 32px;
+        height: 450px;
+    }
+    
+    .copiar {
+        position: absolute;
+        width: 624px;
+        height: 67px;
+        border-radius: 24px;
+        background-color: #FFFFFF;
+        color: #0A3071;
+        font-size: 16px;
+        border: 1px solid #0A3071;
+        cursor: pointer;
+        top: -470px;
+        left: -560%;
+        z-index: 1;
+    }
+
+    .resultado p {
+        background: #FFFFFF;
+        color: #495057;
+        font-size: 25px;
+        border-radius: 24px;
+        height: 400px;
+        width: 650px;
+        
+    }
+
+    #btn-copiar1 {
+        display: none;
+        position: absolute;
+        font-size: 16px;
+        bottom: 400px;
+        top: 855px;
+        background-color: aqua;
+        /*padding-left: 40px;*/
+    }
+    
 }
