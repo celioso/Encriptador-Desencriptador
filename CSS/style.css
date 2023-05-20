@@ -66,13 +66,14 @@ main {
     display: flex;
     color: #495057;
     font-size: 12px;
+    line-height: 150%;
     
 }
 
 .botones {
     display: flex;
     position: absolute;
-    top: 885px;
+    top: 861px;
     left: 240px;
     padding: 24px;
 }
@@ -189,7 +190,7 @@ main {
     position: absolute;
     font-size: 16px;
     bottom: 400px;
-    top: 855px;
+    top: 845px;
     background-color: aqua;
     padding-left: 40px;
 }
