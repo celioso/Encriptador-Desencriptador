@@ -223,7 +223,12 @@ main {
 
     main {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .section_texto{
+        width: 768px;
+        height: 937px;
     }
 
     .logo {
@@ -250,7 +255,7 @@ main {
         width: 80%;
         left:8.25%;
         font-size: 37.5%;
-        /*top:67%;*/
+        top: 812px;
     }
 
     .logo_alerta p {
@@ -259,14 +264,20 @@ main {
 
     .botones {
         align-items: flex-start;
-        width: 84%;
-        height: 5.7%;
-        left: 5.2%;
+        width: 89.58%;
+        height: 64px;
+        left: 0%;
         flex-direction: row;
+        top:822px;
+        padding: 24px 40px 24px 40px;
+    }
+    .btn-encriptar {
+        height: 67px;
+        margin-right: 28px;
     }
 
     .btn-encriptar .btn-desencriptar{
-        width: 48%;
+        width: 328px;
         border-radius: 16px;
     }
 
@@ -276,19 +287,27 @@ main {
         padding: 1.8%;    
     }
 
+    .section_mensaje {
+        width: 768px;
+        height: 237px;
+    }
+    
     .mensaje {
         position: relative;
-        width: 80%;
-        height: 15%;
-        left: 20%;
-        top: 1000px;
+        width: 688px;
+        height: 133px;
+        margin: 0px 40px 0px 40px;
     }
+    
 
     .parrafos {
-        width: 100%;
-        top: 5%;
-        left: -37%;
+        position: flex;
+        width: 688px;
         height: 133px;
+        top:0px;
+        left: 0px;
+        
+        
     }
 
     .munieco {
@@ -298,25 +317,31 @@ main {
     }
 
     .parrafos h3{
+        position: relative;
         width: 624px;
-        height: 40px;
-        top: 23px;
+        height: 29px;
+        top: 32px;
         font-size: 24px;
+        line-height: 120%;
 
     }
 
     .parrafos p{
+        position: relative;
         width: 624px;
-        height: 50px;
+        height: 24px;
+        top: 45px;
         font-size: 16px;
+        line-height: 150%;
         
     }
 
     .parrafos br{
         display: none;
     }
-
+    /*------------------------------------------------*/
     .resultado{
+        display: none;
         position: absolute;
         background-color: #FFFFFF;
         width: 688px;
@@ -327,7 +352,7 @@ main {
         margin: 40px 40px 40px 40px;
         box-sizing: border-box;
         padding: 32px;
-        height: 450px;
+       
     }
     
     .copiar {
@@ -346,6 +371,7 @@ main {
     }
 
     .resultado p {
+        position: absolute;
         background: #FFFFFF;
         color: #495057;
         font-size: 25px;
