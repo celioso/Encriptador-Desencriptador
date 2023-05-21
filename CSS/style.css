@@ -167,7 +167,7 @@ main {
     flex-grow: 0;
 }
 
-.resultado{
+#resultado{
     position: absolute;
     width: 339px;
     height: 744px;
@@ -177,7 +177,7 @@ main {
     margin-left: 25px;
 }
 
-.resultado p {
+#resultado p {
     color: #495057;
     font-size: 25px;
     height: 400px;
@@ -340,12 +340,12 @@ main {
         display: none;
     }
     /*------------------------------------------------*/
-    .resultado{
-        /*display: none;*/
+    #resultado {
+        display: none;
         position: absolute;
         background-color: #911818;
         width: 688px;
-        height: 343px;
+        height: 212px;
         top: 0px;
         padding: 0;
         left: 0%;
@@ -353,13 +353,11 @@ main {
         box-sizing: border-box;
         padding: 0px;
         border-radius: 24px;
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-        
-        
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
        
     }
     
-    .resultado p {
+    #resultado p {
         position: absolute;
         background: #FFFFFF;
         color: #495057;

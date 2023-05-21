@@ -36,6 +36,7 @@ function ocultarAdelante(){
 function mostraBtnCopia(){
     
     document.getElementById('btn-copiar1').style.display = "block";
+    document.getElementById('resultado').style.display = "block";
     /*document.getElementById(copiar).style.display = "inherit";*/
 }
 
