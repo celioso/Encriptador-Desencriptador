@@ -144,7 +144,7 @@ main {
     height: 58px;
     line-height: 28.8px;
     font-size: 24px;
-    font-weight: 700px;
+    font-weight: bold;
     text-align: center;
     color: #343A40;
     flex: none;
@@ -213,7 +213,7 @@ main {
     display: none;
 }
 
-@media (max-width:768px){
+@media screen and (max-width:769px) {
 
     body {
         background-color: #F4F4FC;
@@ -285,11 +285,6 @@ main {
         border-radius: 24px;
     }
 
-    .btn-encriptar:hover, .btn-desencriptar:hover {
-        width: 47.5%;
-        padding: 1.8%;    
-    }
-
     .section_mensaje {
         width: 768px;
         height: 237px;
@@ -321,6 +316,7 @@ main {
 
     .parrafos h3{
         position: relative;
+        font-weight: bold;
         width: 624px;
         height: 29px;
         top: 32px;
@@ -399,14 +395,14 @@ main {
     
 }
 
-@media (max-width: 376px) {
+@media only screen and (max-width:376px) {
 
     body {
         background-color: #F4F4FC;
         width: 375px; 
         height: 1715px;
     }
-/*------------------------------------------------*/
+
     main {
         display: flex;
         flex-direction: column;
@@ -419,10 +415,10 @@ main {
 
     .logo {
         position: absolute;
-        Width:31.09px;
-        Height: 46.37px;
-        left: 5.21%;
-        top: 6.25%;
+        Width:30.43px;
+        Height: 46.18px;
+        left: 16px;
+        top: 23.97px;
     }
 
     .caja_texto {
@@ -441,7 +437,7 @@ main {
         width: 80%;
         left:8.25%;
         font-size: 37.5%;
-        top: 812px;
+        top: 800px;
     }
 
     .logo_alerta p {
@@ -449,32 +445,26 @@ main {
     }
 
     .botones {
-        display: block;
-        align-items: flex-start;
-        width: 89.58%;
-        height: 120px;
+        display: grid;
+        align-content: space-between;
+        position: relative;
+        width: 343px;
+        height: 158px;
         left: 0%;
-        flex-direction: column;
         top:822px;
-        padding: 24px 40px 24px 40px;
+        margin: 0px 16px 0px 16px;
+        padding: 0px 0px 0px 0px;
     }
     .btn-encriptar {
-        width: 328px;
+        width: 343px;
         height: 67px;
-        /*margin-right: 28px;*/
         border-radius: 24px;
     }
 
     .btn-desencriptar{
-        width: 328px;
+        width: 343px;
         height: 67px;
-        border-radius: 16px;
         border-radius: 24px;
-    }
-
-    .btn-encriptar:hover, .btn-desencriptar:hover {
-        width: 47.5%;
-        padding: 1.8%;    
     }
 
     .section_mensaje {
@@ -484,17 +474,17 @@ main {
     
     .mensaje {
         position: relative;
-        width: 688px;
-        height: 133px;
-        margin: 0px 40px 0px 40px;
+        width: 343px;
+        height: 186px;
+        margin: 0px 16px 0px 16px;
     }
     
 
     .parrafos {
-        position: flex;
-        width: 688px;
-        height: 133px;
-        top:0px;
+        position: absolute;
+        width: 343px;
+        height: 186px;
+        top: 0px;
         left: 0px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         
@@ -507,22 +497,29 @@ main {
     }
 
     .parrafos h3{
+        display: flex;
         position: relative;
-        width: 624px;
-        height: 29px;
+        width: 263px;
+        height: 58px;
         top: 32px;
         font-size: 24px;
+        align-self: center;
         line-height: 120%;
+        left:32px;
+        margin: 0px 0px 0px 0px;
 
     }
 
     .parrafos p{
+        display: flex;
         position: relative;
-        width: 624px;
-        height: 24px;
+        width: 263px;
+        height: 58px;
+        left: 32px;
         top: 45px;
         font-size: 16px;
         line-height: 150%;
+        margin: 0px 0px 0px 0px;
         
     }
 
@@ -533,9 +530,8 @@ main {
     #resultado {
         display: none;
         position: absolute;
-        background-color: #FFFFFF;
-        width: 688px;
-        height: 343px;
+        width: 343px;
+        height: 625px;
         top: 0px;
         padding: 0;
         left: 0%;
@@ -549,19 +545,18 @@ main {
     
     #resultado p {
         position: absolute;
-        background: #FFFFFF;
         color: #495057;
         font-size: 25px;
         border-radius: 24px;
-        width: 638px;
+        width: 293px;
         height: 212px;
         padding: 25px;
-        
+        margin: 0px 0px 0px 0px;  
     }
 
     .copiar {
         position: absolute;
-        width: 624px;
+        width: 279px;
         height: 67px;
         border-radius: 24px;
         background-color: #FFFFFF;
@@ -572,16 +567,15 @@ main {
         left: 60%;
         z-index: 1;
         
-    }
-
-    
+    } 
 
     #btn-copiar1 {
         display: none;
         position: absolute;
         font-size: 16px;
         background-color: aqua;
-        top: 150px;
+        top: 430px;
+        left: 10px;
     }
     
 }
